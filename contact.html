@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact et devis — Marchal Électricité, Tours</title>
+  <meta name="description" content="Demandez un devis gratuit à votre électricien à Tours. Rappel sous 48 h, dépannage 7 j/7.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=IBM+Plex+Mono:wght@400;600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Crect width='44' height='44' rx='8' fill='%2322406b'/%3E%3Ccircle cx='22' cy='22' r='13' fill='none' stroke='%23fff' stroke-width='2.5'/%3E%3Ccircle cx='16.5' cy='22' r='2.4' fill='%23fff'/%3E%3Ccircle cx='27.5' cy='22' r='2.4' fill='%23fff'/%3E%3Crect x='20.6' y='9' width='2.8' height='5' rx='1' fill='%23b8862b'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="bandeau">
+  <div class="conteneur">
+    <span>Dépannage 7 j/7, de 7 h à 21 h : <a href="tel:+33247611840">02 47 61 18 40</a></span>
+    <span class="adresse">Atelier : 14 rue des Tanneurs, 37000 Tours</span>
+  </div>
+</div>
+
+<header class="entete">
+  <div class="conteneur">
+    <a class="marque" href="index.html">
+      <svg class="marque-logo" viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="8" fill="#22406b"/><circle cx="22" cy="22" r="13" fill="none" stroke="#fff" stroke-width="2.5"/><circle cx="16.5" cy="22" r="2.4" fill="#fff"/><circle cx="27.5" cy="22" r="2.4" fill="#fff"/><rect x="20.6" y="9" width="2.8" height="5" rx="1" fill="#b8862b"/></svg>
+      <span>
+        <span class="marque-nom">Marchal Électricité</span>
+        <span class="marque-sous">Électricité générale · Tours, depuis 1998</span>
+      </span>
+    </a>
+    <button class="nav-bouton" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="realisations.html">Nos chantiers</a></li>
+        <li><a href="contact.html" aria-current="page">Contact et devis</a></li>
+      </ul>
+      <a class="btn btn-plein" href="contact.html">Demander un devis</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-tete">
+    <div class="conteneur">
+      <span class="surtitre">Contact et devis</span>
+      <h1>Parlez-nous de votre projet</h1>
+      <p>Remplissez le formulaire ou appelez directement. Bertrand vous rappelle sous 48&nbsp;h ouvrées pour fixer une visite, au créneau qui vous arrange.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur contact-grille">
+
+      <div class="formulaire">
+        <h2>Demande de devis gratuit</h2>
+        <p>Quelques lignes suffisent. On précisera le reste ensemble au téléphone.</p>
+        <form id="form-devis" novalidate>
+          <div class="champs">
+            <div class="champ">
+              <label for="nom">Nom et prénom</label>
+              <input id="nom" name="nom" type="text" autocomplete="name" required>
+            </div>
+            <div class="champ">
+              <label for="tel">Téléphone</label>
+              <input id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required>
+            </div>
+            <div class="champ">
+              <label for="commune">Commune des travaux</label>
+              <input id="commune" name="commune" type="text" autocomplete="address-level2" required>
+            </div>
+            <div class="champ">
+              <label for="email">E-mail <span class="aide">(facultatif)</span></label>
+              <input id="email" name="email" type="email" autocomplete="email">
+            </div>
+            <div class="champ champ-large">
+              <label for="type">Type de travaux</label>
+              <select id="type" name="type" required>
+                <option value="">Choisissez…</option>
+                <option>Dépannage ou panne</option>
+                <option>Remplacement du tableau électrique</option>
+                <option>Mise aux normes</option>
+                <option>Rénovation complète</option>
+                <option>Éclairage, prises, borne de recharge</option>
+                <option>Je ne sais pas encore</option>
+              </select>
+            </div>
+            <fieldset class="champ champ-large">
+              <legend>Le logement a</legend>
+              <div class="choix">
+                <label><input type="radio" name="age" value="moins15"> Moins de 15 ans</label>
+                <label><input type="radio" name="age" value="15-40"> 15 à 40 ans</label>
+                <label><input type="radio" name="age" value="plus40"> Plus de 40 ans</label>
+                <label><input type="radio" name="age" value="nsp"> Je ne sais pas</label>
+              </div>
+            </fieldset>
+            <div class="champ champ-large">
+              <label for="message">Votre projet en quelques mots</label>
+              <textarea id="message" name="message" placeholder="Exemple : maison achetée l'an dernier, tableau à fusibles, on aimerait tout remettre aux normes avant de refaire la salle de bains."></textarea>
+            </div>
+            <fieldset class="champ champ-large">
+              <legend>Quand préférez-vous être rappelé&nbsp;?</legend>
+              <div class="choix">
+                <label><input type="radio" name="rappel" value="matin" checked> En matinée</label>
+                <label><input type="radio" name="rappel" value="midi"> Entre 12 h et 14 h</label>
+                <label><input type="radio" name="rappel" value="soir"> Après 18 h</label>
+              </div>
+            </fieldset>
+          </div>
+          <button class="btn btn-plein" type="submit">Envoyer ma demande</button>
+          <p class="rgpd">Vos coordonnées servent uniquement à vous recontacter pour ce projet. Elles ne sont ni revendues, ni utilisées pour de la publicité.</p>
+          <div class="confirmation" id="confirmation" tabindex="-1" role="status">
+            <strong data-prenom>Merci.</strong> Votre demande est envoyée. Bertrand vous rappelle sous 48&nbsp;h ouvrées, au créneau choisi.
+            <br><small>(Site de démonstration&nbsp;: aucune donnée n'a réellement été transmise.)</small>
+          </div>
+        </form>
+      </div>
+
+      <aside class="coordonnees">
+        <div class="carte-info">
+          <h3>Par téléphone</h3>
+          <a class="gros" href="tel:+33247611840">02 47 61 18 40</a>
+          <p>Pour une panne, appelez plutôt que d'écrire&nbsp;: on décroche 7&nbsp;j/7 de 7&nbsp;h à 21&nbsp;h.</p>
+        </div>
+        <div class="carte-info">
+          <h3>Horaires du bureau</h3>
+          <table class="horaires">
+            <tr><td>Lundi au vendredi</td><td>7 h 30 – 18 h 30</td></tr>
+            <tr><td>Samedi</td><td>8 h – 12 h</td></tr>
+            <tr><td>Dépannage urgent</td><td>7 j/7, 7 h – 21 h</td></tr>
+          </table>
+        </div>
+        <div class="carte-info">
+          <h3>Atelier</h3>
+          <p>14 rue des Tanneurs, 37000 Tours</p>
+          <p><a href="mailto:contact@marchal-electricite.example">contact@marchal-electricite.example</a></p>
+        </div>
+        <div class="carte-info">
+          <h3>Où on intervient</h3>
+          <p>Tours et jusqu'à 30 km, sans frais de déplacement supplémentaires&nbsp;:</p>
+          <ul class="communes">
+            <li>Joué-lès-Tours</li>
+            <li>Saint-Cyr-sur-Loire</li>
+            <li>Saint-Avertin</li>
+            <li>Saint-Pierre-des-Corps</li>
+            <li>Fondettes</li>
+            <li>La Riche</li>
+            <li>Chambray-lès-Tours</li>
+            <li>Montlouis-sur-Loire</li>
+            <li>Ballan-Miré</li>
+            <li>Vouvray</li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="section section-grise">
+    <div class="conteneur">
+      <div class="section-tete">
+        <span class="surtitre">Questions fréquentes</span>
+        <h2>Ce qu'on nous demande au téléphone</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>La visite et le devis sont-ils vraiment gratuits&nbsp;?</summary>
+          <p>Oui, pour tous les travaux dans notre zone d'intervention. Seul le dépannage est facturé (69&nbsp;€ TTC le déplacement avec la première heure), parce qu'on répare sur place.</p>
+        </details>
+        <details>
+          <summary>Faut-il quitter la maison pendant une rénovation&nbsp;?</summary>
+          <p>Rarement. On travaille pièce par pièce et on remet le courant chaque soir dans les pièces de vie. Pour une rénovation lourde, on prévoit ensemble un planning qui tient compte de votre quotidien.</p>
+        </details>
+        <details>
+          <summary>Comment savoir si mon installation est dangereuse&nbsp;?</summary>
+          <p>Quelques signes doivent alerter&nbsp;: fusibles en porcelaine, absence d'interrupteur différentiel, prises sans terre, odeur de chaud. En cas de doute, la visite permet de faire le point sans engagement.</p>
+        </details>
+        <details>
+          <summary>Que se passe-t-il si vous découvrez un problème pendant les travaux&nbsp;?</summary>
+          <p>On s'arrête, on vous montre, on vous propose un avenant chiffré. Rien n'est ajouté à la facture sans votre accord écrit.</p>
+        </details>
+        <details>
+          <summary>Peut-on payer en plusieurs fois&nbsp;?</summary>
+          <p>Oui. Au-delà de 1&nbsp;500&nbsp;€, vous pouvez régler en 3 fois sans frais&nbsp;: 30&nbsp;% à la commande, 40&nbsp;% en cours de chantier, le solde à la réception.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pied">
+  <div class="conteneur">
+    <div class="pied-grille">
+      <div>
+        <a class="marque" href="index.html">
+          <svg class="marque-logo" viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="8" fill="#fff"/><circle cx="22" cy="22" r="13" fill="none" stroke="#22406b" stroke-width="2.5"/><circle cx="16.5" cy="22" r="2.4" fill="#22406b"/><circle cx="27.5" cy="22" r="2.4" fill="#22406b"/><rect x="20.6" y="9" width="2.8" height="5" rx="1" fill="#b8862b"/></svg>
+          <span><span class="marque-nom">Marchal Électricité</span><span class="marque-sous">Électricité générale · Tours, depuis 1998</span></span>
+        </a>
+        <p>Artisan électricien, entreprise familiale.<br>SIRET 000 000 000 00000 · Qualifelec n° 00000</p>
+      </div>
+      <div>
+        <h3>Nous joindre</h3>
+        <ul>
+          <li><a href="tel:+33247611840">02 47 61 18 40</a></li>
+          <li><a href="mailto:contact@marchal-electricite.example">contact@marchal-electricite.example</a></li>
+          <li>14 rue des Tanneurs, 37000 Tours</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Le site</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="realisations.html">Nos chantiers</a></li>
+          <li><a href="contact.html">Contact et devis</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pied-bas">
+      <span>Site fictif réalisé à titre de démonstration. Entreprise, personnes et avis inventés.</span>
+      <span>Photos : <a href="https://www.pexels.com">Pexels</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
